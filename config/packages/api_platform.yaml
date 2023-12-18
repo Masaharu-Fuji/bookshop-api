@@ -1,0 +1,28 @@
+api_platform:
+    title: (Title)[config/packages/api_platform.yaml]
+    path_segment_name_generator: api_platform.path_segment_name_generator.dash
+    error_formats:
+        jsonld: ['application/ld+json']      # Hydra error formats
+        jsonapi: ['application/vnd.api+json']
+    version: 1.0.0
+    #APIKey
+    swagger:
+        api_keys:
+            access_token:
+                name: Authorization #ヘッダーに記入する名前 value: Bearer <token>
+                type: header
+            JWT:
+                name: Authorization #ヘッダーに記入する名前 value: Bearer <token>
+                type: header
+    # Good defaults for REST APIs
+    defaults:
+        # stateless: true
+        cache_headers:
+            vary: ['Content-Type', 'Authorization', 'Origin']
+        extra_properties:
+            standard_put: true
+    graphql:
+        graphiql:
+            enabled: true
+        graphql_playground:
+            enabled: true
