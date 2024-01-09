@@ -1,0 +1,79 @@
+<fieldset>
+    <legend>
+        <label for="scales">Entity: writer-ID</label>
+        <input type="number" id="writer-req-id" name="writer-req-id" />
+    </legend>
+    <div id = writerCheckbox>
+        <div>
+            <input type="checkbox" id="writer-id" name="writer-id" value= "id" />
+            <label for="scales">writer-id</label>
+            <input type="checkbox" id="writer-username" name="writer-username" value= "username" />
+            <label for="horns">writer-username</label>
+            <input type="checkbox" id="writer-nickname" name="writer-nickname" value= "nickname" />
+            <label for="horns">writer-nickname</label>
+            <input type="checkbox" id="writer-email" name="writer-email" value= "email" />
+            <label for="horns">writer-email</label>
+        </div>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>
+        <label for="scales">Entity: comment-ID</label>
+        <input type="number" id="comment-req-id" name="comment-req-id" />
+    </legend>
+    <div id = commentCheckbox>
+        <div>
+            <input type="checkbox" id="comment-id" name="comment-id" value= "id" />
+            <label for="scales">comment-id</label>
+            <input type="checkbox" id="comment-title" name="comment-title" value= "title" />
+            <label for="horns">comment-title</label>
+            <input type="checkbox" id="comment-sentence" name="comment-sentence" value= "sentence" />
+            <label for="horns">comment-sentence</label>
+        </div>
+        <fieldset>
+        <legend>
+            <label for="horns">Relation: writer</label>
+            <input type="checkbox" id="comment-writer" name="comment-writer" value= "writer" />
+        </legend>
+        <div>
+            <input type="checkbox" id="comment-writer-id" name="comment-writer-id" value= "id" />
+            <label for="scales">comment-writer-id</label>
+            <input type="checkbox" id="comment-writer-username" name="comment-writer-username" value= "username" />
+            <label for="horns">comment-writer-username</label>
+            <input type="checkbox" id="comment-writer-nickname" name="comment-writer-nickname" value= "nickname" />
+            <label for="horns">comment-writer-nickname</label>
+            <input type="checkbox" id="comment-writer-email" name="comment-writer-email" value= "email" />
+            <label for="horns">comment-writer-email</label>
+        </div>
+        </fieldset>
+        <fieldset>
+        <legend>
+            <label for="horns">Relation: category</label>
+            <input type="checkbox" id="comment-category" name="comment-category" value= "categories" />
+        </legend>
+        <div>
+            <input type="checkbox" id="comment-catogory-id" name="comment-catogory-id" value= "id" />
+            <label for="scales">comment-catogory-id</label>
+            <input type="checkbox" id="comment-catogory-title" name="comment-catogory-title" value= "title" />
+            <label for="horns">comment-catogory-title</label>
+            <input type="checkbox" id="comment-catogory-sentence" name="comment-catogory-sentence" value= "sentence" />
+            <label for="horns">comment-catogory-sentence</label>
+        </div>
+        </fieldset>
+    </div>
+</fieldset>
+<fieldset>
+    <legend>
+        <label for="scales">Entity: category-ID</label>
+        <input type="number" id="category-req-id" name="category-req-id" />
+    </legend>
+    <div id = categoryCheckbox>
+        <div>
+            <input type="checkbox" id="category-id" name="category[0]" value= "3" />
+            <label for="scales">Scales</label>
+            <input type="checkbox" id="category[1]" name="category[1]" value= "31"  />
+            <label for="horns">Horns</label>
+        </div>
+    </div>
+</fieldset>

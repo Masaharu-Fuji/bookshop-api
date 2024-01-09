@@ -21,8 +21,13 @@ api_platform:
             vary: ['Content-Type', 'Authorization', 'Origin']
         extra_properties:
             standard_put: true
+    formats:
+        # ...
+        graphql: ['application/graphql']
     graphql:
+        default_ide: graphiql
+        introspection: true #スキーマの表示(予測候補)
         graphiql:
             enabled: true
-        graphql_playground:
-            enabled: true
+#        graphql_playground:
+#            enabled: true

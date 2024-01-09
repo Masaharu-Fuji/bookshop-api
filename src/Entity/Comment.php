@@ -57,7 +57,7 @@ use Symfony\Component\Validator\Constraints as Assert;
             resolver: CommentCreateResolver::class,
             args: [
                 "title" => [
-                    "type" => "String!"
+                    "type" => "String"
                 ],
                 "sentence" => [
                     "type" => "String!"

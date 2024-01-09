@@ -21,7 +21,6 @@ class CommentController extends AbstractController
     public function index(
         Request $request,
         Comment $comment,
-        Category $category,
     ): Response {
         $form = $this->createForm(CommentType::class, $comment);
         $form->handleRequest($request);
@@ -29,7 +28,7 @@ class CommentController extends AbstractController
             $this->entityManager->persist($comment);
             $this->entityManager->flush();
 
-            return $this->redirectToRoute('category', ['slug' => $category->getName()]);
+            return $this->redirectToRoute('app_comment', ['slug' => $comment->getTitle()]);
         }
         return $this->render('comment/index.html.twig', [
             'controller_name' => 'CommentController',
